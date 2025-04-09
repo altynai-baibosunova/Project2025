@@ -9,11 +9,12 @@ public class Гипотенуза {
         int a = scanner.nextInt();
         int b = scanner.nextInt();
 
-        double c = 0;
+
         //for (int i = 0; i <c ; i++) {
-            c = (a*a+b*b/2);
+            double c = Math.sqrt (a*a+b*b);
 
             System.out.println(c);
+            scanner.close();
 
         }
 
