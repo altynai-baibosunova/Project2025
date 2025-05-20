@@ -7,6 +7,9 @@
       <sourceFolder url="file://$MODULE_DIR$/Mosh_Java_part_1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Classes" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/.idea/JavaClassesTask" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Homework" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Homework/Payment" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Homework/Transportation" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
