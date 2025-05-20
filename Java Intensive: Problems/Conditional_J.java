@@ -1,4 +1,7 @@
 public class Conditional_J {
+    public static void main(String[] args) {
+
+    }
 }
 //Задача №298. Ход короля
 //Поле шахматной доски определяется парой чисел (a, b),
