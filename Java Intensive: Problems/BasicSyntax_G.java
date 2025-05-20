@@ -1,38 +1,31 @@
 import java.util.Scanner;
 
 public class BasicSyntax_G {
-
-    public void isHowManyApplesLeft() {
+    public void Numbers(){
         Scanner scanner = new Scanner(System.in);
-        int N_students = scanner.nextInt();
-        int K_apples = scanner.nextInt();
+        int numInput = scanner.nextInt();
 
-        int remainder = K_apples % N_students;
+        int result = numInput/10;
 
-        System.out.println(remainder);
-
-        }
-
-
+        System.out.println(result);
+    }
 
     public static void main(String[] args) {
         BasicSyntax_G obj = new BasicSyntax_G();
-        obj.isHowManyApplesLeft();
-        
+        obj.Numbers();
     }
 }
-//Задача №2939. Дележ яблок - 2
-//N школьников делят K яблок поровну, неделящийся остаток остается в корзинке. Сколько яблок останется в корзинке?
+//Задача №2942. Число десятков двузначного числа
+//Дано двузначное число. Найдите число десятков в нем.
 //
 //Входные данные
-//Программа получает на вход числа N и K.
+//Вводится двухзначное число.
 //
 //Выходные данные
-//Программа должна вывести искомое количество яблок.
+//Выведите ответ на задачу.
 //
 //Примеры
 //Входные данные
-//3
-//14
+//42
 //Выходные данные
-//2
+//4
