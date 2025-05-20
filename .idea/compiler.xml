@@ -2,7 +2,7 @@
 <project version="4">
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Project2025" options="--add-modules java.base" />
+      <module name="Project2025" options="--add-modules java.base --add-exports java.base/sun.security.util=ALL-UNNAMED" />
     </option>
   </component>
 </project>
