@@ -1,17 +1,22 @@
 import java.util.Scanner;
 
 public class Factorial2 {
-    public static void main(String[] args) {
+    public void isFactNum() {
         Scanner scanner = new Scanner(System.in);
         int N = scanner.nextInt();
         int factorial = 1;
 
-        for (int i = 0; i < N; i++) {
+        for (int i = 1; i <= N; i++) {
             factorial *= i;
         }
         System.out.println(factorial);
     }
+
+    public static void main(String[] args) {
+        Factorial2 obj = new Factorial2();
+        obj.isFactNum();
     }
+}
 
 
 
