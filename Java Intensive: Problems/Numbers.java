@@ -1,13 +1,17 @@
+import java.util.Scanner;
+
 public class Numbers {
 
-    int a = 2;
-    int b = 5;
-
     public void EvenNumbers(){
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+
         for (int i = a; i <=b ; i++) {
             if(i%2 == 0){
                 System.out.println(i);
             }
+
         }
     }
 
@@ -17,6 +21,7 @@ public class Numbers {
 
     }
 }
+
 //Задача №333. Четные числа
 //        Входные данные
 //        Вводятся целые числа a и b. Гарантируется, что a не превосходит b
