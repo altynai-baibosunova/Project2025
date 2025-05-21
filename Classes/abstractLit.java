@@ -11,6 +11,7 @@ public class abstractLit {
         list.add("Geeks 10");
 
         System.out.println("AbstractList: "+list);
+        System.out.println();
 
     }
 
