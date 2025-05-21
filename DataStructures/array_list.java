@@ -7,5 +7,6 @@ public class array_list {
         cars.add("Mazda");
 
         System.out.println(cars);
+        System.out.println();
     }
 }
