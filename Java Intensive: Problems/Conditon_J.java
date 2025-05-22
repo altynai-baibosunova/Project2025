@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Conditonal_J {
+public class Conditon_J {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
