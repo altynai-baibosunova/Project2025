@@ -7,7 +7,12 @@
       <sourceFolder url="file://$MODULE_DIR$/Mosh_Java_part_1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Classes" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/.idea/JavaClassesTask" isTestSource="false" />
-
+      <sourceFolder url="file://$MODULE_DIR$/My Tasks/Classes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/My Tasks/DataStructures" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/My Tasks/Homework" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/My Tasks/Java Intensive: Problems" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/My Tasks/LeetCode" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/My Tasks/Mosh_Java_part_1" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
