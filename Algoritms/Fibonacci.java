@@ -8,9 +8,10 @@ public class Fibonacci {
     }
 
     public static void main(String[] args) {
-        Fibonacci obj = new Fibonacci();
-        System.out.println(fibonnacciSimple(4));
+        Fibonacci1 obj = new Fibonacci1();
+        System.out.println(fibonnacciSimple(6));
     }
 }
 
 //slowest time complexity
+//1,1,2,3,5,8,
