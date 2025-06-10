@@ -1,45 +1,45 @@
- public class ValidPalindrome_125 {
-    public static boolean isPalindrome(String s) {
-        StringBuilder name = new StringBuilder();
-
-        for (int i = 0; i < s.length(); i++) {
-            char letter = s.charAt(i);
-
-            if (Character.isLetterOrDigit(letter)) {
-                name.append(Character.toLowerCase(letter));
-            }
-        }
-
-      // if(name.length()== 0 || name.length() == 1) return true;
-
-        int left = 0;
-        int right = name.length()-1;
-        while (left < right) {    //0<3
-            if (name.charAt(left) != name.charAt(right)) {
-                return false;
-            }
-
-            left++;
-            right--;
-
-        }
-        return true;
-    }
-
-
-
-     public static void main(String[] args) {
-         System.out.println(isPalindrome("level"));
-
-
-
-
-
-
-
-
-     }
-}
+// public class ValidPalindrome_125 {
+//    public static boolean isPalindrome(String s) {
+//        StringBuilder name = new StringBuilder();
+//
+//        for (int i = 0; i < s.length(); i++) {
+//            char letter = s.charAt(i);
+//
+//            if (Character.isLetterOrDigit(letter)) {
+//                name.append(Character.toLowerCase(letter));
+//            }
+//        }
+//
+//      // if(name.length()== 0 || name.length() == 1) return true;
+//
+//        int left = 0;
+//        int right = name.length()-1;
+//        while (left < right) {    //0<3
+//            if (name.charAt(left) != name.charAt(right)) {
+//                return false;
+//            }
+//
+//            left++;
+//            right--;
+//
+//        }
+//        return true;
+//    }
+//
+//
+//
+//     public static void main(String[] args) {
+//         System.out.println(isPalindrome("level"));
+//
+//
+//
+//
+//
+//
+//
+//
+//     }
+//}
 
 // StringBuilder filtered = new StringBuilder();
 //
