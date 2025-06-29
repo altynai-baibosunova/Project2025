@@ -9,6 +9,9 @@
                 name.append(Character.toLowerCase(letter));
             }
         }
+
+      // if(name.length()== 0 || name.length() == 1) return true;
+
         int left = 0;
         int right = name.length()-1;
         while (left < right) {    //0<3
@@ -27,6 +30,13 @@
 
      public static void main(String[] args) {
          System.out.println(isPalindrome("level"));
+
+
+
+
+
+
+
 
      }
 }
