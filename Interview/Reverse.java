@@ -12,7 +12,7 @@ public class Reverse {
 
         String original = "Hello";
         String reverse = new StringBuilder(original).reverse().toString();
-        System.out.println(reverse);
+        System.out.println();
      }
 
 
