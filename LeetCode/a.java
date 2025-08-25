@@ -1,20 +1,21 @@
-//public class a {
 //
-//    public int reverse(int x) {
-//        int reversed = 0;
-//
-//        for (int i = 0; i <= x; i++) {
-//            for (int j = x - 1; j >= 0; j--) {
-//                reversed += x;
-//            }
+//public static List<Integer> findDisappearedNumbers(int[] nums) {
+//        int n = nums.length;
+//        boolean[] seen = new boolean[n + 1];
+//        // index 0 unused
+//        for (int num : nums) {
+//        seen[num] = true;
 //        }
-//return reversed;
-//    }
-//    public static void main(String[] args) {
-//        a obj = new a();
-//        int result = obj.reverse();
-//        System.out.println(result);
-//    }
-//}
-//
-
+//        List<Integer> result = new ArrayList<>();
+//        for (int i = 1; i <= n; i++) {
+//        if (!seen[i]) {
+//        result.add(i);
+//        }
+//        }
+//        return result;
+//        }
+//public static void main(String[] args) {
+//        int [] nums = {4,3,2,7,8,2,3,1}; // 1 2 3  6 8 // 1 2 2 3 3 4  7 8
+//        System.out.println(findDisappearedNumbers(nums));
+//        }
+//        java
