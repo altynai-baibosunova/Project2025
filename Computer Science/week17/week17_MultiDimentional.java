@@ -1,3 +1,5 @@
+package week17;
+
 import java.util.Scanner;
 
 public class week17_MultiDimentional {
