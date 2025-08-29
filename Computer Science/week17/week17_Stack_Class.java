@@ -1,6 +1,6 @@
-import java.util.Stack;
+package week17;
 
-public class wee17_Stack_Class {
+public class week17_Stack_Class {
     public static int fibon(int n){
 
 
