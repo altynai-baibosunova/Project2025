@@ -1,0 +1,17 @@
+import java.util.Arrays;
+
+public class MissingNumber {
+        public int missingNumber(int[] nums) {
+            Arrays.sort(nums);
+            int n = nums.length;
+            int index = 0;
+
+            for (int i = 0; i < n; i++) {
+                if(nums[i] != i){
+                    return i;
+                }
+
+            }
+            return n;
+        }
+}
