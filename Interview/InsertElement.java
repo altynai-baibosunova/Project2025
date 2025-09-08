@@ -1,15 +1,22 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class InsertElement {
     public int removeElement(int[] nums, int val) {
+        List<Integer> list = new ArrayList<>();
 
-        int insertElem = 0;
-        for (int num: nums) {
+        for (int num:nums) {
             if(num != val){
-                nums[insertElem] = num;
-                insertElem++;
-            }
+                list.add(num);
 
         }
-        return insertElem;
+
+    }
+        for (int i = 0; i < list.size(); i++) {
+            nums[i] = list.get(i);
+
+        }
+        return list.size();
     }
 
     public static void main(String[] args) {
