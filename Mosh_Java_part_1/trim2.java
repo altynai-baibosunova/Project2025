@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class trim {
+public class trim2 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
