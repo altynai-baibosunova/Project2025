@@ -1,18 +1,28 @@
 import javax.crypto.spec.PSource;
 
 public class Reverse {
-    public static void main(String[] args) {
-//        String original = "Hello";
-//        String reverse = "";
-//
-//        for(int i=original.length()-1; i>=0; i--) {
-//            reverse += original.charAt(i);
-//        }
-//            System.out.println("Reversed word "+reverse);
+    public static String rev(String word){
+        char[] singleLetter = word.toCharArray();
+        int left = 0;
+        int right = singleLetter.length-1;
 
-        String original = "Hello";
-        String reverse = new StringBuilder(original).reverse().toString();
-        System.out.println();
+        while(left<right){
+            char temp = singleLetter[left];
+            singleLetter[left] = singleLetter[right];
+            singleLetter[right] = temp;
+            left++;
+            right--;
+        }
+        return new String(singleLetter);
+
+    }
+
+    public static void main(String[] args) {
+        Reverse obj = new Reverse();
+        String reversed = obj.rev("Hello");
+        System.out.println(reversed);
+
+
      }
 
 

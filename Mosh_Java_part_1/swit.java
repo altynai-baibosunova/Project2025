@@ -1,4 +1,4 @@
-public class switchcase {
+public class swit {
     public static void main(String[] args) {
         int role = 2;
 
