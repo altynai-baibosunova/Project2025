@@ -1,0 +1,81 @@
+ 1. Core Knowledge
+🔹 HTML
+Semantic elements (<header>, <section>, <article>, etc.)
+Forms and accessibility (label, aria-*)
+SEO basics
+Media tags (<video>, <audio>, <picture>)
+
+
+🔹 CSS
+Box model
+Flexbox and Grid
+Positioning (static, relative, absolute, fixed, sticky)
+Responsive design (media queries, mobile-first)
+CSS specificity and inheritance
+Pseudo-classes and pseudo-elements
+
+🔹 JavaScript (ES6+)
+let, const, arrow functions, template literals
+DOM manipulation (querySelector, addEventListener)
+Event bubbling vs capturing
+Promises, async/await
+Array methods: .map(), .filter(), .reduce()
+Closures, hoisting, scope
+Debouncing & throttling
+
+⚙️ 2. Frontend Frameworks/Libraries
+🔹 React (most common)
+Components (function vs class)
+Props vs state
+Hooks: useState, useEffect, useContext, custom hooks
+Conditional rendering
+Lifting state up
+Controlled vs uncontrolled components
+Basic routing (react-router-dom)
+Key prop in lists
+
+🔧 3. Tooling & Ecosystem
+NPM/Yarn and package.json
+Webpack / Vite / Parcel basics
+Babel
+ESLint / Prettier
+Git & GitHub (branches, merge, pull requests)
+Version control basics
+
+🧪 4. Testing (optional but a bonus)
+Unit testing with Jest
+Component testing with React Testing Library
+End-to-end testing: Cypress or Playwright
+
+
+🤔 5. Behavioral & Soft Skills
+“Tell me about yourself”
+“What’s a challenge you faced and how did you handle it?”
+Teamwork and collaboration
+How do you handle feedback or code reviews?
+
+💻 6. Live Coding & Challenges
+Practice solving problems like:
+Build a counter with React
+Toggle dark/light mode
+Create a dropdown menu
+Accordion or tab component
+Center a div (classic CSS question!)
+Reverse a string or check palindrome in JS
+
+You can use:
+https://frontendmentor.io
+https://leetcode.com
+https://codepen.io
+https://jsfiddle.net
+
+🔍 7. Common Interview Questions
+What’s the difference between == and ===?
+How does the virtual DOM work in React?
+What are controlled components in forms?
+What's the difference between null, undefined, and NaN?
+Explain CORS.
+How would you improve page load performance?
+What’s the difference between CSS Grid and Flexbox?
+Why is accessibility important in frontend?
+

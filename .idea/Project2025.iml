@@ -12,6 +12,13 @@
       <sourceFolder url="file://$MODULE_DIR$/Algoritms" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LeetCode" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HackerRank" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Informatice" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Altynai" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Interview" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Computer Science" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Mosh_Java_part_1" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/OfficeH" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/OfficeHours" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
