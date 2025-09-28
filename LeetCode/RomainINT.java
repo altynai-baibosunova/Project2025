@@ -1,12 +1,12 @@
-//public class RomainINT {
-//        public int romanToInt(String s) {
-//            int number = s.length();
-//            if(number==1){
-//                System.out.println("I");
-//            }
-//
-//        }
-//    }
+public class RomainINT {
+        public int romanToInt(String s) {
+            int number = s.length();
+            if(number==1){
+                System.out.println("I");
+            }
+return s.length();
+        }
+    }
 
 //oman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 //
