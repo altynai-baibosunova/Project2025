@@ -12,4 +12,8 @@ public class A_217_Duplicates {
         }
         return false;
     }
+
+    public static void main(String[] args) {
+
+    }
 }
