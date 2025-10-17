@@ -19,4 +19,8 @@ public class A_125_ValidPal {
         }
     }
 
+    public static void main(String[] args) {
+
+    }
+
 }
