@@ -1,3 +1,6 @@
+import java.util.HashSet;
+import java.util.Set;
+
 public class A_136_SingleNumber {
     public int singleNumber(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
@@ -13,4 +16,23 @@ public class A_136_SingleNumber {
         }
         return -1;
     }
-}
+
+    public int singleN(int[] nums) {
+        Set<Integer> set = new HashSet<>();
+        for (int num : nums) {
+             if(set.contains(num)){
+                 set.remove(num);
+             }else {
+                 set.add(num);
+             }
+        }
+        return set.iterator().next();
+    }
+
+    public int singleXOR(int[] nums) {
+
+
+
+        return 1;
+    }
+    }
