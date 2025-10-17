@@ -28,4 +28,11 @@ public class A_136_SingleNumber {
         }
         return set.iterator().next();
     }
-}
+
+    public int singleXOR(int[] nums) {
+
+
+
+        return 1;
+    }
+    }
