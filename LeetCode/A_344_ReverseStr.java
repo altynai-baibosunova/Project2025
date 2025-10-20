@@ -10,5 +10,10 @@ public class A_344_ReverseStr {
            left++;
            right--;
        }
+
+    }
+
+    public static void main(String[] args) {
+
     }
 }
