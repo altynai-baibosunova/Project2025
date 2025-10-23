@@ -1,7 +1,7 @@
 public class A_169_MajorityElement {
     public static int majorityElement(int[] nums) {
         int count = 0;
-        int cand = -1;
+        int cand = 0;
         for (int num:
              nums) {
             if(count == 0){
