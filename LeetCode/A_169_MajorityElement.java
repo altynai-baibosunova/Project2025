@@ -1,5 +1,5 @@
 public class A_169_MajorityElement {
-    public int majorityElement(int[] nums) {
+    public static int majorityElement(int[] nums) {
         int count = 0;
         int cand = -1;
         for (int num:
@@ -13,5 +13,10 @@ public class A_169_MajorityElement {
             }
         }
         return cand;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {2,3,2};
+        System.out.println(majorityElement(nums));
     }
 }
