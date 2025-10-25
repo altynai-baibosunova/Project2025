@@ -1,5 +1,5 @@
 public class A_383_RansomNote {
-    public boolean canConstruct(String ransomNote, String magazine) {
+    public static boolean canConstruct(String ransomNote, String magazine) {
 
         char[] r = ransomNote.toCharArray();
         char[] m = magazine.toCharArray();
@@ -16,5 +16,9 @@ public class A_383_RansomNote {
             }
         }
         return true;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(canConstruct("aab","aa"));
     }
 }
