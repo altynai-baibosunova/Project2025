@@ -18,7 +18,9 @@ public class A_26_RemoveDupFromSortedArray {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1,2,2,3};
-        System.out.println(removeDuplicates(nums));
+        int[] nums = {1, 2, 2, 3};
+        int length = removeDuplicates(nums);
+        System.out.println(length);  // Output: 3
+        System.out.println(Arrays.toString(Arrays.copyOf(nums, length)));
     }
 }
