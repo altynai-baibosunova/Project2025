@@ -1,13 +1,13 @@
 import java.util.Locale;
 
 public class A_125_ValPalindr {
-    public boolean isPalindrome(String s) {
+    public static boolean isPalindrome(String s) {
 
         s = s.toLowerCase().replaceAll("[^a-z0-9]","");
         return s.equals(reverse("man"));
 
     }
-    private String reverse(String a){
+    private static String reverse(String a){
         int left = 0;
         int right = a.length()-1;
         char[] aaa = a.toCharArray();
@@ -20,6 +20,11 @@ public class A_125_ValPalindr {
         }
         return String.valueOf(aaa);
 
+    }
+
+    public static void main(String[] args) {
+        String s = "nam";
+        System.out.println(isPalindrome(s));
     }
 
 }
