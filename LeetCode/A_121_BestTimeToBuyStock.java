@@ -11,6 +11,19 @@ public class A_121_BestTimeToBuyStock {
         return highestPrice;
 
     }
+
+    public int maxProfits(int[] prices) {
+        int lowest_price = prices[0];
+        int highest_profit = 0;
+
+        for (int today_price : prices) {
+            highest_profit = Math.max(highest_profit, today_price - lowest_price);
+            lowest_price = Math.min(lowest_price, today_price);
+
+        }
+
+        return highest_profit;
+    }
 }
 //121. Best Time to Buy and Sell Stock
 //Easy
