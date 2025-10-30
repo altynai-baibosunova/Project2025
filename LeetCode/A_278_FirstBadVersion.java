@@ -1,9 +1,9 @@
 public class A_278_FirstBadVersion {
-    boolean isBadVersion(int version) {
+    public static boolean isBadVersion(int version) {
         // dummy implementation for testing
         return version >= 4; // suppose version 4 is the first bad version
     }
-    public int firstBadVersion(int n) {
+    public static int firstBadVersion(int n) {
 
         int left = 1;
         int right = n;
@@ -19,5 +19,9 @@ public class A_278_FirstBadVersion {
             }
         }
         return answer;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(isBadVersion(6));
     }
 }
