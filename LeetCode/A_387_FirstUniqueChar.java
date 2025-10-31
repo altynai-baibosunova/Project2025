@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class A_387_FirstUniqueChar {
@@ -19,6 +20,20 @@ public class A_387_FirstUniqueChar {
 
     public static void main(String[] args) {
         String s = "loveleetcode";
-        System.out.println(firstUniqChar(s));
+        System.out.println(firstUniqCh(s));
+    }
+
+    public static int firstUniqCh(String s) {
+            Map<Character, Integer> map = new LinkedHashMap<>();
+            for(int i=0; i<s.length(); i++){
+                char c = s.charAt(i);
+                map.put(c, map.getOrDefault(c, 0)+1);
+            }
+            for(Map.Entry<Character, Integer> entity : map.entrySet()){
+                if(entity.getValue() == 1){
+                    return s.indexOf(entity.getKey());
+                }
+            }
+            return  -1;
     }
 }
