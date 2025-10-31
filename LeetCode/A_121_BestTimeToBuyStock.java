@@ -12,7 +12,7 @@ public class A_121_BestTimeToBuyStock {
 
     }
 
-    public int maxProfits(int[] prices) {
+    public static int maxProfits(int[] prices) {
         int lowest_price = prices[0];
         int highest_profit = 0;
 
@@ -22,6 +22,21 @@ public class A_121_BestTimeToBuyStock {
 
         }
 
+        return highest_profit;
+    }
+
+    public static void main(String[] args) {
+        int[] prices = {7,1,5,3,6,4};
+        System.out.println(maxProf(prices));
+    }
+    public static int maxProf(int[] prices) {
+        int lowest_price = prices[0];
+        int highest_profit = 0;
+
+        for(int current_price : prices){
+            lowest_price = Math.min(current_price, lowest_price);
+            highest_profit = Math.max(highest_profit, current_price-lowest_price);
+        }
         return highest_profit;
     }
 }
