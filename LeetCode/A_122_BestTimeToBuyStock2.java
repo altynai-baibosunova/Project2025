@@ -1,5 +1,5 @@
 public class A_122_BestTimeToBuyStock2 {
-    public int maxProfit(int[] prices) {
+    public static int maxProfit(int[] prices) {
         int days = prices.length;
         int profit=0;
         for (int i=0; i <days-1; i++){
@@ -8,5 +8,10 @@ public class A_122_BestTimeToBuyStock2 {
             }
         }
         return profit;
+    }
+
+    public static void main(String[] args) {
+        int[] prices = {7,1,5,3,6,4};
+        System.out.println(maxProfit(prices));
     }
 }
