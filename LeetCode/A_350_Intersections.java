@@ -24,4 +24,9 @@ public class A_350_Intersections {
         }
         return myres;
     }
+
+
+    public int[] inter(int[] nums1, int[] nums2) {
+        return new int[]{};
+    }
 }
