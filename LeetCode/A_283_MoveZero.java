@@ -22,9 +22,32 @@ public class A_283_MoveZero {
     public static void main(String[] args) {
         int[] nums = {0,1,0,3,12};
       //  moveZeroes(nums);
-        moveZero(nums);
+        moveZ(nums);
         System.out.println(Arrays.toString(nums));
     }
+
+
+
+
+
+
+
+
+
+
+    public static void moveZ(int[] nums) {
+
+        int index=0;
+        for(int num : nums) {
+            if (num != 0) {
+                nums[index++] = num;
+            }
+        }
+            while (index< nums.length)
+                nums[index++] = 0;
+            }
+
+
 
     public static void moveZero(int[] nums) {
         List<Integer> list = new ArrayList<>();
