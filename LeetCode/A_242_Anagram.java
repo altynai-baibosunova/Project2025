@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class A_242_Anagram {
-        public boolean isAnagram(String s, String t) {
+        public static boolean isAnagram(String s, String t) {
             char[] sa = s.toCharArray();
             char[] ta = t.toCharArray();
 
@@ -21,7 +21,23 @@ public class A_242_Anagram {
             String t = "Papa";
            boolean result = obj.isAnagram(s,t);
 
-        System.out.println(result);
+        System.out.println(isAnagr("rat", "atr"));
+    }
+
+
+
+
+
+    public static boolean isAnagr(String s, String t) {
+            char[] ss = s.toCharArray();
+            Arrays.sort(ss);
+            char[] tt = t.toCharArray();
+            Arrays.sort(tt);
+
+           if(ss.length == tt.length){
+               return true;
+           }
+           return false;
     }
     }
 
