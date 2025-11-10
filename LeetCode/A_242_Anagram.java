@@ -21,7 +21,7 @@ public class A_242_Anagram {
             String t = "Papa";
            boolean result = obj.isAnagram(s,t);
 
-        System.out.println(isAnagr("rat", "atr"));
+        System.out.println(isA("rat", "atr"));
     }
 
 
@@ -38,6 +38,23 @@ public class A_242_Anagram {
                return true;
            }
            return false;
+    }
+
+
+    public static boolean isA(String s, String t) {
+            if(s.length() != t.length()) return false;
+
+            int[] freq = new int[26];
+            for(int i=0; i<s.length(); i++){
+                freq[s.charAt(i) - 'a']++;
+                freq[t.charAt(i) - 'a']--;
+
+            }
+
+            for(int n: freq) {
+                if (n != 0) return false;
+            }
+            return true;
     }
     }
 
