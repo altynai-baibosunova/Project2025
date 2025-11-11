@@ -32,12 +32,12 @@ public class A_55_JumpGame {
 
     public static void main(String[] args) {
 
-        int[] nums = {3, 2, 1, 0, 4};
+        int[] nums = {2, 3, 1, 1, 4};
         System.out.println(canJ(nums));
     }
 
 
-    public static boolean canJ(int[] nums) {
+    public static boolean can(int[] nums) {
         int reach = 0;
         for (int i = 0; i < nums.length; i++) {
             if (i > reach) {
@@ -53,5 +53,18 @@ public class A_55_JumpGame {
         return true;
 
     }
-}
 
+    public static boolean canJ(int[] nums) {
+        int maxReach = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            if (i > maxReach) {
+                return false;
+            } else {
+                maxReach = Math.max(i + nums[i], maxReach);
+            }
+
+        }
+        return true;
+    }
+}
