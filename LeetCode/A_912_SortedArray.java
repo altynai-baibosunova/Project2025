@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class A_912_SortedArray {
     public int[] sortArray(int[] nums) {
         MergeSort(nums, 0, nums.length-1);
@@ -56,7 +58,7 @@ public class A_912_SortedArray {
 
 
 
-    public int[] sortAr(int[] nums) {
+    public static int[] sortAr(int[] nums) {
         int n = nums.length;
         for (int i = 0; i <n-1 ; i++) {
             for (int j = i+1; j < n; j++) {
@@ -68,6 +70,11 @@ public class A_912_SortedArray {
             }
         }
         return nums;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {5,2,3,1};
+        System.out.println(Arrays.toString(sortAr(nums)));
     }
         }
 
