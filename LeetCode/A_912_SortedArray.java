@@ -44,6 +44,31 @@ public class A_912_SortedArray {
                     arr[k++] = R[j++];
                 }
             }
+
+
+
+
+
+
+
+
+
+
+
+
+    public int[] sortAr(int[] nums) {
+        int n = nums.length;
+        for (int i = 0; i <n-1 ; i++) {
+            for (int j = i+1; j < n; j++) {
+                if(nums[i]>nums[j]){
+                    int swap = nums[i];
+                    nums[i] = nums[j];
+                    nums[j] = swap;
+                }
+            }
+        }
+        return nums;
+    }
         }
 
 
