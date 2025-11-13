@@ -2,12 +2,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class A_22_GenerateParentese {
-    public List<String> generateParenthesis(int n) {
+    public static List<String> generateParenthesis(int n) {
         List<String> result = new ArrayList<>();
         backtrack(result, 0, 0 , "", n);
         return result;
     }
-    public void backtrack(List<String> result, int left, int right, String s, int n){
+    public static void backtrack(List<String> result, int left, int right, String s, int n){
         if(s.length() == n*2){
             result.add(s);
             return;
@@ -16,5 +16,9 @@ public class A_22_GenerateParentese {
         }if(right<left){
             backtrack(result,left,right+1,s+")",n);
         }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(generateParenthesis(3));
     }
 }
