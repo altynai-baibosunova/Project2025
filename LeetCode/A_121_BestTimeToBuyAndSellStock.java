@@ -11,40 +11,27 @@ public class A_121_BestTimeToBuyAndSellStock {
         }
         return maxProfit;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    public int maxProf(int[] prices) {
+//-----------------------------------------
+    public static int maxProf(int[] prices) {
         int profit = 0;
         int lowest_price = prices[0];
 
 
-        for(int today_price : prices){    // 7:
-            if(today_price>lowest_price){ //
-                lowest_price = Math.min(today_price, profit);
-                profit = Math.max(today_price, profit-lowest_price);
-
+        for (int today_price : prices) {    // 7:
+            if (today_price < lowest_price) { //
+                lowest_price = today_price;
             }
+                profit = Math.max(profit, today_price - lowest_price);
+
+
         }
-        return profit;
+            return profit;
+        }
+
+
+    public static void main(String[] args) {
+        int[] prices = {7,1,5,3,6,4};
+        System.out.println(maxProf(prices));
     }
 }
 //Input: prices = [7,1,5,3,6,4]
