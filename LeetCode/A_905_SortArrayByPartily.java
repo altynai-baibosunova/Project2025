@@ -1,8 +1,9 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class A_905_SortArrayByPartily {
-    public int[] sortArrayByParity(int[] nums) {
+    public static int[] sortArrayByParity(int[] nums) {
         if(nums.length == 0 || nums==null) return new int[]{0};
 
         List<Integer> list = new ArrayList<>();
@@ -22,6 +23,11 @@ public class A_905_SortArrayByPartily {
             result[index++] = n;
         }
         return result;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {3,1,2,4};
+        System.out.println(Arrays.toString(sortArrayByParity(nums)));
     }
 }
 //Input: nums = [3,1,2,4]
