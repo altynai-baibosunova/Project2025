@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class A_3_LongestSubstring {
-    public int lengthOfLongestSubstring(String s) {
+    public static int lengthOfLongestSubstring(String s) {
         int maxL = 0;
         for (int start = 0; start < s.length(); start++) {
             Set<Character> seen = new HashSet<>();
@@ -18,5 +18,9 @@ public class A_3_LongestSubstring {
 
         }
         return maxL;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(lengthOfLongestSubstring("gvfbb"));
     }
 }
