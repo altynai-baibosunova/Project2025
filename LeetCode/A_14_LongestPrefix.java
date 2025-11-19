@@ -15,4 +15,19 @@ public class A_14_LongestPrefix {
         String[] strs = {"flower","flow","flight"};
         System.out.println(longestCommonPrefix(strs));
     }
+
+
+
+
+
+
+
+    public static String longestCommonPr(String[] strs) {
+        int prefix=0;
+
+
+
+
+        return null;
+    }
 }
