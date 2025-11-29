@@ -31,7 +31,31 @@ public class A_121_BestTimeToBuyAndSellStock {
 
     public static void main(String[] args) {
         int[] prices = {7,1,5,3,6,4};
-        System.out.println(maxProf(prices));
+        System.out.println(ma(prices));
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public static int ma(int[] prices) {
+        int minPrice = prices[0];
+        int profit = 0;
+
+        for(int todayPrice : prices){
+
+            minPrice = Math.min(minPrice, todayPrice);
+            profit = Math.max(profit, todayPrice-minPrice);
+        }
+        return profit;
     }
 }
 //Input: prices = [7,1,5,3,6,4]
