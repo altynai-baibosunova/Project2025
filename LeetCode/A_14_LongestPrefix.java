@@ -13,7 +13,7 @@ public class A_14_LongestPrefix {
 
     public static void main(String[] args) {
         String[] strs = {"flower","flow","flight"};
-        System.out.println(longestCommonPrefix(strs));
+        System.out.println(longestCommonPr(strs));
     }
 
 
@@ -22,12 +22,27 @@ public class A_14_LongestPrefix {
 
 
 
+
+
+
+
+
+
+
+
     public static String longestCommonPr(String[] strs) {
-        int prefix=0;
+        if(strs == null || strs.length == 0) return  "";
 
+        String prefix = strs[0];
 
+       for(int i=1; i< strs.length; i++){
+           while(!strs[i].startsWith(prefix)){
+               prefix = prefix.substring(0, prefix.length()-1);
 
+               if(prefix.isEmpty()) return "";
+           }
 
-        return null;
+       }
+        return prefix;
     }
 }
