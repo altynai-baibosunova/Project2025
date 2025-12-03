@@ -17,11 +17,11 @@ public class A_242_Anagram {
 
     public static void main(String[] args) {
 
-            String s = "Mama";
-            String t = "Papa";
+            String s = "mam";
+            String t = "mma";
 
 
-        System.out.println(isAnagramACSII(s,t));
+        System.out.println(isAnagramACS(s,t));
     }
 
 
@@ -64,6 +64,26 @@ public class A_242_Anagram {
         for(int i=0; i<t.length(); i++){
             char ta = t.charAt(i);
             count[ta-'a']--;
+        }
+        for (int i : count){
+            if(i != 0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+
+
+    public static boolean isAnagramACS(String s, String t) {
+            if(s.length() != t.length()) return false;
+
+            int[] count = new int[256];
+
+        for (int i = 0; i < s.length(); i++) {
+            count[s.charAt(i)]++;
+            count[t.charAt(i)]--;
         }
         for (int i : count){
             if(i != 0){
