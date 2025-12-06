@@ -74,13 +74,13 @@ public class A_912_SortedArray {
 
     public static void main(String[] args) {
         int[] nums = {5,2,3,1};
-        System.out.println(Arrays.toString(sort(nums)));
+        System.out.println(Arrays.toString(sortSelection(nums)));
     }
 
 
 
 
-    public static int[] sort(int[] nums) {
+    public static int[] sortQuickSort(int[] nums) {
         int n = nums.length;
         for(int i=0; i<n-1; i++){
             for(int j=0; j<n-i-1; j++){
@@ -94,6 +94,41 @@ public class A_912_SortedArray {
 
 return nums;
 
+    }
+
+//5,4,3,2
+    public static int[] sortInsertion(int[] nums) {
+        for (int i = 1; i < nums.length; i++) {
+            int key = nums[i];
+            int j = i-1;
+
+            while (j>=0 && nums[j]>key){
+                nums[j+1] = nums[j];
+                j--;
+            }
+            nums[j+1] = key;
+
+        }
+        return nums;
+    }
+
+    public static int[] sortSelection(int[] nums) {
+        int n = nums.length;
+
+        for (int i = 0; i < n-1; i++) {
+            int minIndex = i;
+
+            for (int j = i+1; j < n; j++) {
+                if(nums[j] < nums[minIndex]){
+                    minIndex = j;
+                }
+            }
+            int temp = nums[minIndex];
+            nums[minIndex] = nums[i];
+            nums[i] = temp;
+
+        }
+        return nums;
     }
         }
 
