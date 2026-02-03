@@ -6,6 +6,10 @@ public class RomainINT {
             }
 return s.length();
         }
+
+    public static void main(String[] args) {
+
+    }
     }
 
 //oman numerals are represented by seven different symbols: I, V, X, L, C, D and M.

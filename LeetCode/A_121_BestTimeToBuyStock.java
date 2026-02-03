@@ -11,21 +11,46 @@ public class A_121_BestTimeToBuyStock {
         return highestPrice;
 
     }
+
+    public static int maxProfits(int[] prices) {
+        int lowest_price = prices[0];
+        int highest_profit = 0;
+
+        for (int today_price : prices) {
+            highest_profit = Math.max(highest_profit, today_price - lowest_price);
+            lowest_price = Math.min(lowest_price, today_price);
+
+        }
+
+        return highest_profit;
+    }
+
+    public static void main(String[] args) {
+        int[] prices = {7,1,5,3,6,4};
+        System.out.println(ma(prices));
+    }
+    public static int maxProf(int[] prices) {
+        int lowest_price = prices[0];
+        int highest_profit = 0;
+
+        for(int current_price : prices){
+            lowest_price = Math.min(current_price, lowest_price);
+            highest_profit = Math.max(highest_profit, current_price-lowest_price);
+        }
+        return highest_profit;
+    }
+    public static int ma(int[] prices) {
+        int lowest = prices[0];
+        int highest = 0;
+
+        for(int eachDay : prices){
+            lowest = Math.min(lowest, eachDay);
+            highest = Math.max(highest, eachDay-lowest);
+        }
+        return highest;
+    }
 }
-//121. Best Time to Buy and Sell Stock
-//Easy
-//Topics
-//premium lock icon
-//Companies
-//You are given an array prices where prices[i] is the price of a given stock on the ith day.
-//
-//You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
-//
-//Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
-//
-//
-//
-//Example 1:
+
 //
 //Input: prices = [7,1,5,3,6,4]
 //Output: 5

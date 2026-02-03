@@ -17,7 +17,7 @@ public class A_136_SingleNumber {
         return -1;
     }
 
-    public int singleN(int[] nums) {
+    public int singleSet(int[] nums) {
         Set<Integer> set = new HashSet<>();
         for (int num : nums) {
              if(set.contains(num)){
@@ -30,9 +30,18 @@ public class A_136_SingleNumber {
     }
 
     public int singleXOR(int[] nums) {
-
-
-
-        return 1;
+      int result = 0;
+        for (int num:
+             nums) {
+            result = result ^ num;
+        }
+        return result;
     }
+
     }
+
+
+
+
+
+
